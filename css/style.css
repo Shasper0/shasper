@@ -4,6 +4,7 @@
     --secondery-color: #393E46;
     --third-color: #00ADB5;
     --fourth-color: #EEEEEE;
+    --black-color:#000000;
     --transition-03s: 0.4s;
     --padding-50-0: 50px 0;
 }
@@ -228,15 +229,18 @@ footer .contact a:hover i {
     margin-bottom: 50px;
     color: var(--third-color);
 }
- .landing h3{
+
+.landing h3 {
     font-size: 30px;
     margin-bottom: 20px;
     color: var(--fourth-color);
- }
+}
+
 .landing ul {
     color: var(--fourth-color);
 }
-.landing ul li{
+
+.landing ul li {
     text-align: right;
     list-style: none;
     font-size: 20px;
@@ -244,25 +248,50 @@ footer .contact a:hover i {
     display: flex;
     justify-content: flex-start;
 }
-.landing ul li i{
+
+.landing ul li i {
     margin-left: 10px;
 }
+
 /* End Landing */
 /* Start Cards */
-.cards{
-    padding:var(--padding-50-0) ;
-    background-color: var(--third-color);
-    color: var(--fourth-color);
+.cards {
+    padding: var(--padding-50-0);
+    background-color: var(--fourth-color);
+    color: var(--main-color);
 }
-.cards .contaner{
+
+.cards .contaner {
     display: grid;
-    grid-template-columns: repeat(3, minmax( 250px ,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
-.cards .card{
+
+.cards .card {
     text-align: center;
 }
-.cards .card img{
+
+.cards .card img {
     max-width: 100%;
+}
+.card .price{
+    font-size: 20px;
+}
+.card .order {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background: var(--black-color);
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.card .order:hover{
+    color: var(--third-color);
 }
 /* End Cards */
